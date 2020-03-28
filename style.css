@@ -1,10 +1,23 @@
+
 body
 {
-    background-color: grey;
+    background-image: url('/photos/Website\ Design\ Background\ \ \ MOBO\ Media\ Web\ Design.png');
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+strong
+{
+    font-size: 40px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: rgb(211, 230, 129)
 }
 p
 {
-    color: black;
+    
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: rgb(171, 232, 236);
     font-size: 40px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
@@ -13,9 +26,9 @@ h1
 {
     font-style: italic;
     text-align: center;
-    font-size: 50px;
+    font-size: 70px;
     font-weight: bold;
-    color: black;
+    color: rgb(226, 134, 134);
 }
 h2
 {
@@ -49,10 +62,12 @@ h2
     margin: 10px 15px 15px 10px;
 }
 .column {
+    
     flex: 25%;
     padding: 5px;
     height: auto;
     width: 100%;
+    
 }
 .row{
     display: flex;
@@ -104,3 +119,108 @@ li a:hover {
     margin-left: auto;
     width: 60%;
 }
+p {
+  width: 100%;
+  border: 15px solid rgb(141, 182, 141);
+  padding: 50px;
+  margin: 20px;
+  
+}
+body {
+    font-family: Arial;
+    margin: 0;
+  }
+  
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  formText
+  {
+     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      color: white;
+      font-weight: bold;
+      font-size: 40px;
+  }

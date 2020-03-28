@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
+  
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>My First Website</title>
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
 <div id="menu">
-<img class="logo-img" src="./pohtos/logo.PNG" width="100px" height="100px" ALT="align box" ALIGN=CENTER>
+<img class="logo-img" src="./photos/logo2.PNG" width="100px" height="80px" ALT="align box" ALIGN=CENTER>
 <li><a href="#about">About Me</a></li>
 <li><a href="#photos">My Photos</a></li>
 <li><a href="#playlist">My Playlist</a></li>
@@ -17,15 +19,7 @@
 </div>
 
 <section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
 <br/>
 <br/>
 <br/>
@@ -48,19 +42,8 @@
 </section>
 
 <section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+
 <br/>
 <br/>
 <br/>
@@ -68,20 +51,70 @@
 <br/>
 <br/>
 <br/>
-<div class="row">
+<!-- Container for the image gallery -->
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides" align=middle>
+    <div class="numbertext">1 / 6</div>
+      <img src="./photos/pic2.jpg" style="width:30%">
+  </div>
+
+  <div class="mySlides" align=middle>
+    <div class="numbertext">2 / 6</div>
+      <img src="./photos/pic3.jpg" style="width:30%">
+  </div>
+
+  <div class="mySlides" align=middle>
+    <div class="numbertext">3 / 6</div>
+      <img src="./photos/pic4.jpg" style="width:30%">
+  </div>
+
+  <div class="mySlides" align=middle>
+    <div class="numbertext">4 / 6</div>
+      <img src="./photos/pic5.jpg" style="width:30%">
+  </div>
+
+  <div class="mySlides" align=middle>
+    <div class="numbertext" >5 / 6</div>
+      <img src="./photos/pic1.jpg" style="width:30%">
+  </div>
+
+  <div class="mySlides" align=middle>
+    <div class="numbertext">6 / 6</div>
+      <img src="./photos/pic2.jpg" style="width:30%" >
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
     <div class="column">
-      <img src="./pohtos/pic5.jpg" style="width: 100%" height= "100%">
+      <img align=middle class="demo cursor" src="./photos/pic2.jpg" style="width:100%" onclick="currentSlide(1)">
     </div>
     <div class="column">
-      <img src="./pohtos/pic2.jpg" style="width: 100%" height= "100%">
+      <img class="demo cursor" src="./photos/pic3.jpg" style="width:100%" onclick="currentSlide(2)" >
     </div>
     <div class="column">
-      <img src="./pohtos/pic3.jpg" style="width: 100%" height= "100%">
+      <img class="demo cursor" src="./photos/pic4.jpg" style="width:100%" onclick="currentSlide(3)" >
     </div>
     <div class="column">
-      <img src="./pohtos/pic4.jpg" style="width: 100%" height= "100%">
+      <img class="demo cursor" src="./photos/pic5.jpg" style="width:100%" onclick="currentSlide(4)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./photos/pic1.jpg" style="width:100%" onclick="currentSlide(5)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./photos/pic2.jpg" style="width:100%" onclick="currentSlide(6)" >
     </div>
   </div>
+</div>
 </section>
 
 <section id="playlist" class="section">
@@ -106,7 +139,7 @@
 <br/>
 <br/>
 <div class="your-centered-div">
-    <iframe width="560" height="315" <iframe width="560" height="315" src="https://www.youtube.com/embed/4eResXt3WPc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+    <iframe align="middle" width="150%" height="120%" src="https://www.youtube.com/embed/4eResXt3WPc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe>    
 </div>
 </section>
 
@@ -131,8 +164,7 @@
 <br/>
 <br/>
 <br/>
-<div class="fb-like" data-href="https://www.facebook.com/shayshoshana/"
- data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+<div class="fb-like" data-href="https://sise-web-development-environments.github.io/assignment1-deanblinder/" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
 </section>
 
 <section id="qrcoder" class="section">
@@ -158,7 +190,7 @@
 <br/>
 </section>
 <section id="qrcode">
-    <img src="./pohtos/qrcode.png" style="width: 30%" height= "30%">
+    <img src="./photos/qrcode.jpg" style="width: 30%" height= "30%">
   </section>
 <section id="spa" class="section">
 <br/>
@@ -205,16 +237,21 @@
 <br/>
 <br/>
 <form method="post" action="mailto:deanblinder@hotmail.com" autocomplete="on" enctype="text/plain">
-  <p><label>Email:
-     <input name="Email" type="email" id="email" placeholder="name@domain.com">
-     </label></p>
-  <p><label for="txtList">Subject:
+  <formText ><label >Email:
+     <input name="Email" type="email" id="email" placeholder="name@domain.com" >
+     <br/>
+     </label></formText>
+  <formText><label for="txtList">Subject:
      <input name="Subject" type="text" body="text" placeholder="Subject">
-  </label></p>
-  <p><label for="txtList">Message:</p>
+     <br/>
+  </label></formText>
+  <formText><label for="txtList">Message:</formText>
+    <br/>
     <textarea name="Message" placeholder="Message" rows="4" cols="36"></textarea>
- </label></p>
-     <p><label>What's your mood? 
+    <br/>
+ </label></formText>
+ <br/>
+     <formText><label>What's your mood? 
       <select name="mood">
       <option selected=🤩>
       </option><option>😀
@@ -228,9 +265,10 @@
       </option><option>😡	
       </option><option>😧	
       </option><option>😱
-      </option>😴</select></p>  
-      <p><input type="submit" value="Submit">
-      <input type="reset" value="Clear"></p> 
+      </option>😴</select>  
+      <br/>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Clear">
 </form>
 </section>
 <script type="text/javascript">
@@ -248,5 +286,35 @@ $(function(){
  </script>
  <div id="fb-root"></div>
  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v6.0"></script>
+ <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
 </body>
 </html>
