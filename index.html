@@ -1,270 +1,396 @@
 <!DOCTYPE html>
 <html>
-  
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>My First Website</title>
-<link rel="stylesheet" type="text/css" href="style.css" />
+  <title>My First Website</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
+
 <body>
-<div id="menu">
-<img class="logo-img" src="./photos/logo2.PNG" width="100px" height="80px" ALT="align box" ALIGN=CENTER>
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
-</div>
-
-<section id="about" class="section">
-
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<h1>about me</h1>
-<br/>
-<p>
-    My name is dean blinder, i'm 28 years old i originally from Haifa. i am a third year
-    student in the Information Systems Engeneering department in Ben Gurion University.
-    My hobbies are playing the drums,
-    cooking, watching series, playing and being with my friends.
-    My expectation from this course are very high and I
-    want to learn many intresting things and don't work too much about exhausting css files.
-</p>
-<br/>
-<br/>
-</section>
-
-<section id="photos" class="section">
-
-
-<br/>
-<br/>
-<br/>
-<h1>my photos</h1>
-<br/>
-<br/>
-<br/>
-<!-- Container for the image gallery -->
-<div class="container">
-
-  <!-- Full-width images with number text -->
-  <div class="mySlides" align=middle>
-    <div class="numbertext">1 / 6</div>
-      <img src="./photos/pic2.jpg" style="width:30%">
+  <div id="menu">
+    <img class="logo-img" src="./photos/logo2.PNG" width="100px" height="80px" ALT="align box" ALIGN=CENTER>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#photos">My Photos</a></li>
+    <li><a href="#playlist">My Playlist</a></li>
+    <li><a href="#like">Like</a></li>
+    <li><a href="#qrcoder">QR code</a></li>
+    <li><a href="#spa">Q&A</a></li>
+    <li><a href="#contact">Contact Me</a></li>
   </div>
 
-  <div class="mySlides" align=middle>
-    <div class="numbertext">2 / 6</div>
-      <img src="./photos/pic3.jpg" style="width:30%">
-  </div>
+  <section id="about" class="section">
 
-  <div class="mySlides" align=middle>
-    <div class="numbertext">3 / 6</div>
-      <img src="./photos/pic4.jpg" style="width:30%">
-  </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="content">
+      <h2>about me</h2>
+      My name is dean blinder, i'm 28 years old i originally from Haifa.
+      i am a third year student in the Information Systems Engeneering department in Ben Gurion University.
+      My hobbies are playing the drums, cooking, watching series,
+      playing and being with my friends. My expectation from this course are very high and I want to learn many
+      intresting things and don't work too much about exhausting css files.
 
-  <div class="mySlides" align=middle>
-    <div class="numbertext">4 / 6</div>
-      <img src="./photos/pic5.jpg" style="width:30%">
-  </div>
-
-  <div class="mySlides" align=middle>
-    <div class="numbertext" >5 / 6</div>
-      <img src="./photos/pic1.jpg" style="width:30%">
-  </div>
-
-  <div class="mySlides" align=middle>
-    <div class="numbertext">6 / 6</div>
-      <img src="./photos/pic2.jpg" style="width:30%" >
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-  <!-- Image text -->
-  <div class="caption-container">
-  </div>
-
-  <!-- Thumbnail images -->
-  <div class="row">
-    <div class="column">
-      <img align=middle class="demo cursor" src="./photos/pic2.jpg" style="width:100%" onclick="currentSlide(1)">
     </div>
-    <div class="column">
-      <img class="demo cursor" src="./photos/pic3.jpg" style="width:100%" onclick="currentSlide(2)" >
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="./photos/pic4.jpg" style="width:100%" onclick="currentSlide(3)" >
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="./photos/pic5.jpg" style="width:100%" onclick="currentSlide(4)" >
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="./photos/pic1.jpg" style="width:100%" onclick="currentSlide(5)" >
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="./photos/pic2.jpg" style="width:100%" onclick="currentSlide(6)" >
-    </div>
-  </div>
-</div>
-</section>
-
-<section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<h1>my playlist</h1>
-<br/>
-<br/>
-<br/>
-<div class="your-centered-div">
-    <iframe align="middle" width="150%" height="120%" src="https://www.youtube.com/embed/4eResXt3WPc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe>    
-</div>
-</section>
-
-<section id="like" class="section">
-
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<h1>give me a like</h1>
-
-<br/>
-<div class="fb-like" data-href="https://sise-web-development-environments.github.io/assignment1-deanblinder/" data-width="100px" data-layout="standard" data-action="like" data-size="" data-share="true"></div>
-</section>
-
-<section id="qrcoder" class="section">
-
-
-<h1>scan my code</h1>
-
-</section>
-<section id="qrcode">
-    <img src="./photos/qrcode.jpg" style="width: 30%" height= "30%">
+    <!-- <div class="container">
+      <div class= "top" style="float: left;">
+      My name is dean blinder, i'm 28 years old i originally from Haifa.<br />
+      i am a third year
+      student in the Information Systems Engeneering <br />
+      department in Ben Gurion University.<br />
+      My hobbies are playing the drums, cooking, watching series, playing and being with my friends.<br />
+      My expectation from this course are very high and I<br />
+      want to learn many intresting things and don't work too much about exhausting css files.
+    </p> -->
+    <br />
+    <br />
   </section>
-<section id="spa" class="section">
-<br/>
-<h1>ans</h1>
-<br/>
-<br/>
-<br/>
-</section>
 
-<section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<h1>contact me</h1>
-<br/>
-<br/>
-<br/>
-<form method="post" action="mailto:deanblinder@hotmail.com" autocomplete="on" enctype="text/plain">
-  <formText ><label >Email:
-     <input name="Email" type="email" id="email" placeholder="name@domain.com" >
-     <br/>
-     </label></formText>
-  <formText><label for="txtList">Subject:
-     <input name="Subject" type="text" body="text" placeholder="Subject">
-     <br/>
-  </label></formText>
-  <formText><label for="txtList">Message:</formText>
-    <br/>
-    <textarea name="Message" placeholder="Message"  rows="10" cols="70"></textarea>
-    <br/>
- </label></formText>
- <br/>
-     <formText><label>What's your mood? 
-      <select name="mood">
-      <option selected=🤩 >
-      </option><option>😀
-      </option><option>😁	
-      </option><option>😂	
-      </option><option>😃
-      </option><option>😈	
-      </option><option>😍 
-      </option><option>😎	
-      </option><option>😐	
-      </option><option>😡	
-      </option><option>😧	
-      </option><option>😱
-      </option>😴</select>  
-      <br/>
-      <button type="submit" >Submit</button>
-      <button type="reset">Clear</button>
-</form>
-</section>
-<script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
-  });
-});
-</script>
-<script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
- <div id="fb-root"></div>
- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v6.0"></script>
- <script>
-  var slideIndex = 1;
-  showSlides(slideIndex);
+  <section id="photos" class="section">
+
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- Container for the image gallery -->
+    <div class="photosContainer">
+      
+      <h3>my photos</h3>
+      
+      
+      <div class="mySlides" align=middle>
+        <div class="numbertext">1 / 6</div>
+        <img src="./photos/pic2.jpg" style="width:30%">
+      </div>
+
+      <div class="mySlides" align=middle>
+        <div class="numbertext">2 / 6</div>
+        <img src="./photos/pic3.jpg" style="width:30%">
+      </div>
+
+      <div class="mySlides" align=middle>
+        <div class="numbertext">3 / 6</div>
+        <img src="./photos/pic4.jpg" style="width:30%">
+      </div>
+
+      <div class="mySlides" align=middle>
+        <div class="numbertext">4 / 6</div>
+        <img src="./photos/pic5.jpg" style="width:30%">
+      </div>
+
+      <div class="mySlides" align=middle>
+        <div class="numbertext">5 / 6</div>
+        <img src="./photos/pic1.jpg" style="width:30%">
+      </div>
+
+      <div class="mySlides" align=middle>
+        <div class="numbertext">6 / 6</div>
+        <img src="./photos/pic2.jpg" style="width:30%">
+      </div>
+      
+    </div>
+
+      <!-- Next and previous buttons -->
+
+
+      <!-- Image text -->
+      <div class="caption-container">
+      </div>
+      
+      <!-- Thumbnail images -->
+      <div class="row">
+        <div class="column">
+          <img align=middle class="demo cursor" src="./photos/pic2.jpg" style="width:100%" onclick="currentSlide(1)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./photos/pic3.jpg" style="width:100%" onclick="currentSlide(2)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./photos/pic4.jpg" style="width:100%" onclick="currentSlide(3)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./photos/pic5.jpg" style="width:100%" onclick="currentSlide(4)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./photos/pic1.jpg" style="width:100%" onclick="currentSlide(5)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./photos/pic2.jpg" style="width:100%" onclick="currentSlide(6)">
+        </div>
+        
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="playlist" class="section">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="photosContainer">
+    <h3>my playlist</h3>
+    
+    <br />
+    <br />
+    <br />
+    <div class="your-centered-div">
+      <iframe align="middle" width="100%" height="120%" src="https://www.youtube.com/embed/4eResXt3WPc" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe></iframe>
+        <br />
+        <br />
+        <br />
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jP4XtOEs-1s" frameborder="0"
+         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+         allowfullscreen></iframe>
+    </div>
+  </div>
   
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
+  </section>
+
+  <section id="like" class="section">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="your-centered-div">
+
+    <h3>give me a like</h3>
+
+    <br />
+    <div class="fb-like" data-href="https://sise-web-development-environments.github.io/assignment1-deanblinder/"
+      data-width="100px" data-layout="standard" data-action="like" data-size="large" data-share="true"></div>
+    </div>
+    </section>
+
+  <section id="qrcoder" class="section">
+
+
+    <h3>scan my code</h3>
+
+  </section>
+  <section id="qrcode">
+    <img src="./photos/qrcode.jpg" style="width: 30%" height="30%">
+  </section>
+  <section id="spa" class="section">
+    <br />
+    <h3>ans</h3>
+    <br />
   
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
+  </section>
+
+  <section id="contact" class="section">
   
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    var captionText = document.getElementById("caption");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
+
+    <h3>contact me</h3>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <section id="contact-form">
+      <form class="form-style-9" align="CENTER" action="mailto:deanblinder@hotmail.com" accept-charset="utf-8" autocomplete="on" enctype="text/plain">
+        <ul>
+        <li>
+            <input type="text" name="field1" class="field-style field-split align-left" placeholder="Name" />
+            <input type="email" name="field2" class="field-style field-split align-right" placeholder="Email" />
+        
+        </li>
+        
+        
+        <li>
+        <input type="text" name="field3" class="field-style field-full align-none" placeholder="Subject" />
+        </li>
+        <li>
+        <textarea name="field5" class="field-style" placeholder="Message"></textarea>
+        </li>
+        <li>
+          <h3>whats your mood</h3>
+          <select name="mood">
+            <option selected=🤩 >
+            </option>
+            <option>😀
+            </option>
+            <option>😁
+            </option>
+            <option>😂
+            </option>
+            <option>😃
+            </option>
+            <option>😈
+            </option>
+            <option>😍
+            </option>
+            <option>😎
+            </option>
+            <option>😐
+            </option>
+            <option>😡
+            </option>
+            <option>😧
+            </option>
+            <option>😱
+            </option>😴
+          </select>
+        <br />
+        <br />
+        <input type="submit" value="Send Message"/>
+        <input type="submit" value="reset"/>
+        </li>
+        </ul>
+        </form>
+      <!-- <form id="contact" name="contact" action="mailto:deanblinder@hotmail.com" accept-charset="utf-8" autocomplete="on"
+        enctype="text/plain">
+        <label><span>Name</span><input name="name" type="text" placeholder="Name" body="text"
+            placeholder="Subject" /></label>
+        <label><span>Email</span><input name="email" type="email" placeholder="Email" /></label>
+        <label><span>Message</span><textarea name="message" placeholder="Message"></textarea></label>
+        <input name="submit" type="submit" value="Send" size="50px" />
+      </form>
+      <aside>
+
+      </aside>
+    </section> -->
+    <!-- <form method="post" action="mailto:deanblinder@hotmail.com" autocomplete="on" enctype="text/plain">
+      <formText><label>Email:
+          <input name="Email" type="email" id="email" placeholder="name@domain.com">
+          <br />
+        </label></formText>
+      <formText><label for="txtList">Subject:
+          <input name="Subject" type="text" body="text" placeholder="Subject">
+          <br />
+        </label></formText>
+      <formText><label for="txtList">Message:</formText>
+      <br />
+      <textarea name="Message" placeholder="Message" rows="10" cols="70"></textarea>
+      <br />
+      </label></formText>
+      <br /> -->
+<!--     
+    <label> -->
+      <!-- <select name="mood">
+        <option selected=🤩>
+        </option>
+        <option>😀
+        </option>
+        <option>😁
+        </option>
+        <option>😂
+        </option>
+        <option>😃
+        </option>
+        <option>😈
+        </option>
+        <option>😍
+        </option>
+        <option>😎
+        </option>
+        <option>😐
+        </option>
+        <option>😡
+        </option>
+        <option>😧
+        </option>
+        <option>😱
+        </option>😴
+      </select> -->
+      <br />
+  </section>
+  <script type="text/javascript">
+    $(function () {
+      $("#nav a").click(function (e) {
+        e.preventDefault();
+        $('html,body').scrollTo(this.hash, this.hash);
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).scroll(function () {
+      $('#menu').toggle($(this).scrollTop() > 1000)
+    });​
+  </script>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v6.0"></script>
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
+      }
+      for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      captionText.innerHTML = dots[slideIndex - 1].alt;
     }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    captionText.innerHTML = dots[slideIndex-1].alt;
-  }
   </script>
 </body>
+
 </html>
