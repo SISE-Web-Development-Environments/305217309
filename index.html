@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <meta charset="UTF-8"
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>My First Website</title>
   <link rel="stylesheet" type="text/css" href="style.css" />
@@ -69,7 +70,7 @@
       
       <div class="mySlides" align=middle>
         <div class="numbertext">1 / 6</div>
-        <img src="./photos/pic2.jpg" style="width:30%">
+        <img src="./photos/pic6.jpg" style="width:30%">
       </div>
 
       <div class="mySlides" align=middle>
@@ -109,7 +110,7 @@
       <!-- Thumbnail images -->
       <div class="row">
         <div class="column">
-          <img align=middle class="demo cursor" src="./photos/pic2.jpg" style="width:100%" onclick="currentSlide(1)">
+          <img align=middle class="demo cursor" src="./photos/pic6.jpg" style="width:100%" onclick="currentSlide(1)">
         </div>
         <div class="column">
           <img class="demo cursor" src="./photos/pic3.jpg" style="width:100%" onclick="currentSlide(2)">
@@ -199,6 +200,9 @@
   <section id="spa" class="section">
     <br />
     <h3>ans</h3>
+    <p align=right>
+    
+    </p>
     <br />
   
   </section>
@@ -238,27 +242,27 @@
     <br />
     <br />
     <section id="contact-form">
-      <form class="form-style-9" align="CENTER" action="mailto:deanblinder@hotmail.com" accept-charset="utf-8" autocomplete="on" enctype="text/plain">
+      <form class="form-style-9" method="POST" align="CENTER" action="mailto:deanblinder@hotmail.com" accept-charset="utf-8" autocomplete="on" enctype="text/plain">
         <ul>
         <li>
-            <input type="text" name="field1" class="field-style field-split align-left" placeholder="Name" />
-            <input type="email" name="field2" class="field-style field-split align-right" placeholder="Email" />
+            <input type="text" name="Name" class="field-style field-split align-left" placeholder="Name" />
+            <input type="email" name="Email" class="field-style field-split align-right" placeholder="Email" />
         
         </li>
         
         
         <li>
-        <input type="text" name="field3" class="field-style field-full align-none" placeholder="Subject" />
+        <input type="text" name="Subject" class="field-style field-full align-none" placeholder="Subject" />
         </li>
         <li>
-        <textarea name="field5" class="field-style" placeholder="Message"></textarea>
+        <textarea name="Message" class="Message" placeholder="Message"></textarea>
         </li>
         <li>
-          <h3>whats your mood</h3>
-          <select name="mood">
-            <option selected=🤩 >
+          
+          <h4>whats your mood?</h4><select name="mood">
+          <option selected=" ">choose
             </option>
-            <option>😀
+            <option>🥺
             </option>
             <option>😁
             </option>
@@ -283,8 +287,9 @@
           </select>
         <br />
         <br />
+        
         <input type="submit" value="Send Message"/>
-        <input type="submit" value="reset"/>
+        <input type="reset" value="reset"/>
         </li>
         </ul>
         </form>
