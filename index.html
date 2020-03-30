@@ -2,6 +2,10 @@
 <html>
 
 <head>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.1/emojionearea.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.1/emojionearea.min.js"> </script>
   <meta charset="UTF-8"
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>My First Website</title>
@@ -241,6 +245,7 @@
     <br />
     <br />
     <br />
+   
     <section id="contact-form">
       <form class="form-style-9" method="GET" align="CENTER" action="mailto:deanblinder@hotmail.com" accept-charset="utf-8" autocomplete="on" enctype="text/plain">
         <ul>
@@ -255,37 +260,16 @@
         <input type="text" name="Subject" class="field-style field-full align-none" placeholder="Subject" />
         </li>
         <li>
-          <textarea name="body" id="commentarea" type="body" placeholder="comment" required name="Comment" style="height:150px ; border-color:plum"></textarea>
-        <!-- <textarea name="Message" class="Message" placeholder="Message"></textarea> -->
-        </li>
+          
+           
+          </div>
+          
+            <textarea name="body"  id="commentArea"  type="body" placeholder="comment" required name="Comment" style="height:150px ; border-color:plum"></textarea>
+         
+          
+          </li>
         <li>
           
-          <h4>whats your mood?</h4><select name="mood">
-          <option selected=" ">choose
-            </option>
-            <option>🥺
-            </option>
-            <option>😁
-            </option>
-            <option>😂
-            </option>
-            <option>😃
-            </option>
-            <option>😈
-            </option>
-            <option>😍
-            </option>
-            <option>😎
-            </option>
-            <option>😐
-            </option>
-            <option>😡
-            </option>
-            <option>😧
-            </option>
-            <option>😱
-            </option>😴
-          </select>
         <br />
         <br />
         
@@ -294,63 +278,13 @@
         </li>
         </ul>
         </form>
-      <!-- <form id="contact" name="contact" action="mailto:deanblinder@hotmail.com" accept-charset="utf-8" autocomplete="on"
-        enctype="text/plain">
-        <label><span>Name</span><input name="name" type="text" placeholder="Name" body="text"
-            placeholder="Subject" /></label>
-        <label><span>Email</span><input name="email" type="email" placeholder="Email" /></label>
-        <label><span>Message</span><textarea name="message" placeholder="Message"></textarea></label>
-        <input name="submit" type="submit" value="Send" size="50px" />
-      </form>
-      <aside>
-
-      </aside>
-    </section> -->
-    <!-- <form method="post" action="mailto:deanblinder@hotmail.com" autocomplete="on" enctype="text/plain">
-      <formText><label>Email:
-          <input name="Email" type="email" id="email" placeholder="name@domain.com">
-          <br />
-        </label></formText>
-      <formText><label for="txtList">Subject:
-          <input name="Subject" type="text" body="text" placeholder="Subject">
-          <br />
-        </label></formText>
-      <formText><label for="txtList">Message:</formText>
-      <br />
-      <textarea name="Message" placeholder="Message" rows="10" cols="70"></textarea>
-      <br />
-      </label></formText>
-      <br /> -->
-<!--     
-    <label> -->
-      <!-- <select name="mood">
-        <option selected=🤩>
-        </option>
-        <option>😀
-        </option>
-        <option>😁
-        </option>
-        <option>😂
-        </option>
-        <option>😃
-        </option>
-        <option>😈
-        </option>
-        <option>😍
-        </option>
-        <option>😎
-        </option>
-        <option>😐
-        </option>
-        <option>😡
-        </option>
-        <option>😧
-        </option>
-        <option>😱
-        </option>😴
-      </select> -->
       <br />
   </section>
+  <script>
+    $("#commentArea").emojioneArea({
+        pickerPosition: 'CENTER'
+    })
+  </script>
   <script type="text/javascript">
     $(function () {
       $("#nav a").click(function (e) {

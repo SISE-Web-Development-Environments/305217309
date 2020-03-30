@@ -409,11 +409,15 @@ body {
       height: 10em;
     }
     input[type="submit"], button {
-      margin-left: 20%;
+      margin-left: 10%;
     }
     input[type="reset"], button {
-      margin-left: 20%;
+      margin-left: 10%;
     }
+  }
+  div.form-popup {
+    
+    width: 700px
   }
   
   @media screen and (min-width: 48em) {
