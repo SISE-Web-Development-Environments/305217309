@@ -467,10 +467,7 @@ body {
       margin-left: 10%;
     }
   }
-  div.form-popup {
-    
-    width: 700px
-  }
+  
   
   @media screen and (min-width: 48em) {
     #contact-form {
