@@ -1,4 +1,7 @@
-
+.demo_cursor{
+  height: 100%;
+  width: 50%;
+}
 body
 {
     background-image: url('./photos/backpic.gif');
@@ -57,7 +60,9 @@ strong{
 .photosContainer{
 margin: 100px;
 }
-<style type="text/css">
+
+
+
 .form-style-9{
 	max-width: 450px;
 	background: #FAFAFA;
@@ -147,7 +152,7 @@ margin: 100px;
 	background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
 	background-color: #28739E;
 }
-</style>
+
 h3{
   color: white ;
    font-size: 100px;
